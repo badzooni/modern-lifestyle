@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kontakt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    <link rel="css/basic-template.css" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="css/Trening.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/Kontakt.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+</head>
+
+<body>
+    <!--Strelica za nazad -->
+    <a href="#" class="back-to-top">Back to Top</a>
+    <!--Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top oboji skrolaj">
+        <a class="navbar-brand" href="index.html"><span  id="naslov">&nbsp;Modern Lifestyle</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item levo">
+                    <a class="nav-link" href="index.html">
+                        <button type="button" class="btn btn-primary btn-custom-nav">Početna</button>
+                    </a>
+                </li>
+                <li class="nav-item levo">
+                    <a class="nav-link" href="Trening.html">
+                        <button type="button" class="btn btn-primary btn-custom-nav">Trening</button>
+                    </a>
+                </li>
+                <li class="nav-item levo">
+                    <a class="nav-link" href="Ishrana.html">
+                        <button type="button" class="btn btn-primary btn-custom-nav">Ishrana</button>
+                    </a>
+                </li>
+                <li class="nav-item levo">
+                    <a class="nav-link" href="Zdravlje.html">
+                        <button type="button" class="btn btn-primary btn-custom-nav">Zdravlje</button>
+                    </a>
+                </li>
+                <li class="nav-item levo">
+                    <a class="nav-link" href="Kontakt.html">
+                        <button type="button" class="btn btn-primary btn-custom-nav">Kontakt</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- script bledi nav-->
+    <script type="text/javascript">
+    $(function() {
+        $(window).scroll(function() {
+            if ($(window).scrollTop() >= 100) {
+                $('nav').addClass('skrolaj');
+            } else {
+                $('nav').removeClass('skrolaj');
+            }
+
+        });
+    });
+    </script>
+    <!-- Kraj Navigation bar -->
+    <div class="container animated fadeIn">
+
+  <div class="row">
+    <div class="col-sm-12" id="parent">
+        <div class="row">
+            
+            <div class="col-12 text-center">
+                <h1>Kontaktirajte nas</h1>
+            </div>
+            <div class="col-12 ">
+                <form action="form.php" class="contact-form" method="post">
+        
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="name" name="nm" placeholder="Ime" required="" autofocus="">
+                    </div>
+                
+                
+                    <div class="form-group form_left">
+                      <input type="email" class="form-control" id="email" name="em" placeholder="E-mail" required="">
+                    </div>
+                
+                  <div class="form-group">
+                       <input type="text" class="form-control" id="phone" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="12" placeholder="Broj telefona" required="">
+                  </div>
+                  <div class="form-group">
+                  <textarea class="form-control textarea-contact" rows="5" id="comment" name="FB" placeholder="Napišite primedbu/povratnu informaciju..." required=""></textarea>
+                  <br>
+                  <button class="btn btn-default btn-send"> <span class="glyphicon glyphicon-send"></span> Pošalji </button>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="container second-portion">
+    <div class="row">
+        <!-- polja za  popunjavanje -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="box">                           
+                <div class="icon">
+                    <div class="image"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="info">
+                        <h3 class="title">E-mail & Vebsajt</h3>
+                        <p>
+                            <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp modernlifestyle@gmail.rs
+                            <br>
+                            <br>
+                            <i class="fa fa-globe" aria-hidden="true"></i> &nbsp www.modernlifestyle.rs
+                        </p>
+                    
+                    </div>
+                </div>
+                <div class="space"></div>
+            </div> 
+        </div>
+            
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="box">                           
+                <div class="icon">
+                    <div class="image"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+                    <div class="info">
+                        <h3 class="title">Broj telefona</h3>
+                        <p>
+                            <i class="fa fa-mobile" aria-hidden="true"></i> &nbsp 060/555-333
+                            <br>
+                            <br>
+                            <i class="fa fa-mobile" aria-hidden="true"></i> &nbsp  011/555-333 
+                        </p>
+                    </div>
+                </div>
+                <div class="space"></div>
+            </div> 
+        </div>
+            
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="box">                           
+                <div class="icon">
+                    <div class="image"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="info">
+                        <h3 class="title">Adresa</h3>
+                        <p>
+                             <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp braće Ahmedovski 52/3 B
+                        </p>
+                    </div>
+                </div>
+                <div class="space"></div>
+            </div> 
+        </div>          
+        <!-- /Kutije -->
+        
+        
+        
+    </div>
+</div>
+
+</div>
+    
+    </footer>
+    <!-- js za strelicu-->
+    <script>
+    var amountScrolled = 300;
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > amountScrolled) {
+            $('a.back-to-top').fadeIn('slow');
+        } else {
+            $('a.back-to-top').fadeOut('slow');
+        }
+    });
+    $('a.back-to-top').click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 700);
+        return false;
+    });
+    </script>
+    <!-- js za text kod strelice za backtotop-->
+</body>
+
+</html>
+
+
+
+

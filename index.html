@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    <link rel="css/basic-template.css" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="css/animate.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 800px)" href="css/index.css" />
+</head>
+
+<body>
+    <!--Strelica za nazad -->
+    <a href="#" class="back-to-top">Back to Top</a>
+    <!--Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top oboji skrolaj">
+        <a class="navbar-brand" href="index.html"><span  id="naslov">&nbsp;Modern Lifestyle</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item levo">
+                    <a class="nav-link" href="index.html">
+                        <button type="button" class="btn btn-primary btn-custom-nav">Početna</button>
+                    </a>
+                </li>
+                <li class="nav-item levo">
+                    <a class="nav-link" href="Trening.html">
+                        <button type="button" class="btn btn-primary btn-custom-nav">Trening</button>
+                    </a>
+                </li>
+                <li class="nav-item levo">
+                    <a class="nav-link" href="Ishrana.html">
+                        <button type="button" class="btn btn-primary btn-custom-nav">Ishrana</button>
+                    </a>
+                </li>
+                <li class="nav-item levo">
+                    <a class="nav-link" href="Zdravlje.html">
+                        <button type="button" class="btn btn-primary btn-custom-nav">Zdravlje</button>
+                    </a>
+                </li>
+                <li class="nav-item levo">
+                    <a class="nav-link" href="Kontakt.html">
+                        <button type="button" class="btn btn-primary btn-custom-nav">Kontakt</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- script bledi nav-->
+    <script type="text/javascript">
+    $(function() {
+        $(window).scroll(function() {
+            if ($(window).scrollTop() >= 150) {
+                $('nav').addClass('skrolaj');
+            } else {
+                $('nav').removeClass('skrolaj');
+            }
+
+        });
+    });
+    </script>
+    <!-- Kraj Navigation bar -->
+    <img class="zamob" src="img/slajd2.jpg">
+    <!-- Slajder-->
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="img-1">
+                    
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="img-2">
+                    
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="img-3">
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <!-- Kraj slajder-->
+    <div class="bgslika">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container-fluid box4">
+            <div class="row section1">
+                <div class="col-md-4 box41 vertical-center">
+                    <div class="vertical-center1">
+                        <img src="img/rac.jpg">
+                    </div>
+                </div>
+                <div class="col-md-8 box42 vertical-center">
+                    <div class="vertical-center1 text-center box4txt">
+                        <h1>DA LI TRENIRATE REDOVNO?</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="container-fluid box6">
+            <div class="row section1">
+                <div class="col-md-8 box42 vertical-center">
+                    <div class="vertical-center1 text-center box6txt">
+                        <h1>DA LI SE PRAVILNO HRANITE?</h1>
+                    </div>
+                </div>
+                <div class="col-md-4 box41 vertical-center">
+                    <div class="vertical-center1">
+                        <img src="img/hrana.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="container-fluid box5">
+            <div class="row section1">
+                <div class="col-md-4 box41 vertical-center">
+                    <div class="vertical-center1">
+                        <img src="img/box5.jpg">
+                    </div>
+                </div>
+                <div class="col-md-8 box42 vertical-center">
+                    <div class="vertical-center1 text-center box6txt">
+                        <h1>DA LI VODITE RAČUNA O SVOM ZDRAVLJU?</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
+    <footer class="footcol">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <br>
+                    <h2>O nama</h2>
+                    <h4>
+                        Tim stručnjaka za pronalaženje optimalnih rešenja za poboljšanje kvaliteta Vašeg života.
+                            <br> Kod nas će te postići idealne rezultate o kojima ste oduvek sanjali. Uspeh Vam je zagarantovan uz dosta truda.
+                            <br>Posedujemo savremenu teretanu, wellness centar sa saunom.
+                    </h4>
+                
+                    <h2> Adresa </h2>
+                    <h4>
+                         <b><i>Ulica: </i></b> Braće Ahmedovski 52/3 B
+                            <br>
+                            <b><i>Kontakt telefon:</i></b> 011/555-333
+                            <br>
+                            <b><i>E-mail:</i></b> modernlifestyle@gmail.rs
+                            <br>
+                    </h4>
+                    <div class="footer-icons">
+                        <a href="https://www.facebook.com/">  <img src="img/ff.png" width=50px; height=50px; /> </a>
+                        <a href="https://www.instagram.com/">  <img src="img/ig.png" width=50px; height=50px; /> </a>
+                        <a href="https://www.youtube.com/">  <img src="img/yt.png" width=50px; height=50px; /> </a>
+                        <a href="https://www.linkedin.com/">  <img src="img/lf.png" width=50px; height=50px; /> </a>
+                        <a href="https://www.twitter.com/">  <img src="img/tf.png" width=50px; height=50px; /> </a>
+                    </div>
+                        <div class="copyright">
+                        <h4 class="col-md-12 pp1">Copyright &copy; 2018 - Powered by <a href="#">Modern Lifestyle</a></h4>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+
+    </footer>
+    <!-- js za strelicu-->
+    <script>
+    var amountScrolled = 300;
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > amountScrolled) {
+            $('a.back-to-top').fadeIn('slow');
+        } else {
+            $('a.back-to-top').fadeOut('slow');
+        }
+    });
+    $('a.back-to-top').click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 700);
+        return false;
+    });
+    </script>
+    <!--kraj back to top -->
+    <!-- animacije boxa -->
+    <script>
+    window.inx = ScrollReveal();
+    inx.reveal('.box4', {
+        duration: 2000,
+        origin: 'top',
+        distance: '300px',
+        viewFactor: 0.3
+    });
+
+    inx.reveal('.box5', {
+        duration: 2000,
+        origin: 'top',
+        distance: '300px',
+        viewFactor: 0.3
+    });
+
+    inx.reveal('.box6', {
+        duration: 2000,
+        origin: 'bottom',
+        distance: '300px',
+        viewFactor: 0.3
+    });
+    </script>
+</body>
+
+</html>

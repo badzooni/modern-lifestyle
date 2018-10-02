@@ -1,0 +1,448 @@
+/*font za Modern Lifestyle*/
+
+@font-face {
+  font-family: ft;
+  src:url('../fonts/BodoniFLF-Bolditalic.ttf');
+}
+
+@font-face {
+  font-family: ft2;
+  src:url('../fonts/JMHExtraWide.ttf');
+}
+@font-face {
+  font-family: ft3;
+  src:url('../fonts/Aristotelica.ttf');
+} 
+@font-face {
+  font-family: ft4;
+  src:url('../fonts/AnaphoraRegulartrial.ttf');
+}
+/*kraj font*/
+
+nav {
+  width: 100%;
+}
+.zamob {
+    display: none;
+}
+
+/*navigacija podesavanje*/
+
+.oboji {
+	background-color: black;
+}
+
+/* bledi navbar skrolanjem*/
+
+.skrolaj {
+  opacity: 0.8;
+}
+
+/* srelica za back to top */
+
+a.back-to-top {
+    display: none;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    bottom: 20px;
+    background: rgb(184, 50, 242, 0.3) url('../img/uparr.png') no-repeat center 43%;
+    /*background-color: ;*/
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+a.back-to-top:hover {
+    background-color: rgb(199, 82, 249, 0.3);
+}
+/* kraj strelice*/
+#naslov {
+  font-family: ft;
+  font-size: 30px;
+  color: white;
+}
+
+
+/* kraj navigacije */
+
+/* 3 boxa*/
+
+.triboxa img {
+    width: 100%;
+}
+.triboxa {
+    display: flex;
+    margin: auto;
+}
+.box-item {
+    position: relative;
+    overflow: hidden;
+    margin-top:70px; 
+}
+.box-img {
+  transition: all 0.5s;
+}
+.box-text {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  transform: translateY(100%);
+  transition: all 0.5s ease-out;
+}
+.box-text p {
+  text-align: justify;
+}
+.box-item:hover .box-text {
+  transform: translateY(0%);
+}
+.box-item:hover .box-img {
+  transform: scale(1.25);
+}
+/* kraj 3 boxa */
+
+/* 4. box*/
+
+.box4, .box5, .box6 {
+  width: 100%;
+  background-color: #ededed;
+  margin: 0px;
+}
+/*footer*/
+.footcol {
+  background-color: #404040;
+  height:40%;
+} 
+h2 {
+	color: white;
+}  
+h4 {
+	color: #717375;
+  font-size: 18px;
+  line-height: 30px;
+}
+.footer-icons {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  letter-spacing: 4px;
+}
+.copyright {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.pp1
+{
+  margin-top: 20px;
+  margin-bottom: 0px;
+  width: 100%;
+
+}
+.pp1 a {
+    text-decoration: none;
+    color: #df96ff;
+    font-weight: bold;
+}
+
+.pp1 a:hover {
+    text-decoration: none;
+    color: #380f49;
+}
+
+form {
+  width: 300px;
+  margin: 20px auto;
+}
+
+input, textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color:#fff;
+  border:1px solid #ccc;
+  font-size: 20px;
+  width:300px;
+  min-height: 30px;
+  display: block;
+  margin-bottom: 16px;
+  margin-top: 8px;
+  padding-left:8px;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+textarea {
+  min-height: 200px;
+}
+
+input:focus, textarea:focus {
+  box-shadow:0 0 25px #ccc;
+  transform: scale(1.05);
+}
+
+input:not(:focus), textarea:not(:focus) {
+  opacity:0.5;
+}
+
+input [type=submit] {
+  padding: 10px;
+  background: none;
+  opacity: 1.0;
+}
+.forma {
+  width: 100%; 
+}
+/* kraj futer*/
+
+/* nav za telefone*/
+
+@media  screen and (max-width: 650px) {
+
+  body {
+    text-align: center;
+  }
+  .pomeri {
+    position: relative;
+    left: 0px;
+  }
+  #demo {
+    display: none;
+  }
+  .zamob {
+    display:block;
+    width: 100%;
+    height: 300px;
+    opacity: 0.9;
+  }
+  .imgbox1, .imgbox2, .imgbox3 {
+    width: 450px;
+    height: 300px;
+  }
+  .box1, .box2, .box3 {
+    margin-top: 20px;
+  }
+  .box1txt, .box2txt, .box3txt {
+    margin-top:20px;
+    width: 100%;
+  }
+  .lista {
+    display: none;
+  }
+  .logolist {
+    margin-top: 120px;
+    margin-bottom:0px; 
+  }
+  .pp1 {
+    margin-top:-20px;
+    margin-bottom:0px; 
+  }
+}
+/*kraj  nav za telefone*/
+/*slider images*/
+.img-1 {
+    background-image: url(../img/slajd1.jpg);
+    height: 590px;
+    background-size: cover;
+    justify-content: center;
+    background-position: 50%;
+    display: flex;
+    align-items: center;
+}
+.img-2 {
+    background-image: url(../img/slajd2.jpg);
+    height: 590px;
+    background-size: cover;
+    justify-content: center;
+    background-position: 50%;
+    display: flex;
+    align-items: center;
+}
+.img-3 {
+    background-image: url(../img/slajd3.jpg);
+    height: 590px;
+    background-size: cover;
+    justify-content: center;
+    background-position: 50%;
+    display: flex;
+    align-items: center;
+}
+/* buttons */
+.btn-custom-nav {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background-color: rgb(184, 50, 242, 0.3);
+    border-radius: 2px;
+    width: 100%;
+}
+.btn-custom-nav:hover {
+    background-color: rgb(199, 82, 249, 0.3);
+}
+.btn-custom-nav:focus {
+    background-color: rgb(199, 82, 249, 0.3);
+    box-shadow: none !important;
+    outline: none;
+}
+.btn-custom-nav:active {
+    background-color: rgb(199, 82, 249, 0.3) !important;
+}
+/* navbar */
+.navbar-toggler {
+    background-color: #fff;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+}
+/* media */
+
+@media screen and (min-width: 768px) {
+    .vertical-center {
+        position: relative;
+        height: 300px;
+        display: table;
+    }
+    .vertical-center1 {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    /* section 1 */
+    .section1 {
+        height: 300px;
+    }
+    .section1 img {
+        width: 100%;
+        max-height: 280px;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .box41, .box51, .box61 {
+        padding-top: 20px;
+        margin-right: 0px;
+        margin-bottom: 20px; 
+    }
+    .box41 img, .box51 img, .box61 img
+    {
+        width: 100%; 
+
+    }
+     .box5txt, .box6txt {
+        margin-left: 30px;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        margin-top: 50px;
+        
+    }
+    .box4txt
+    {
+        margin-left: 30px;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    }
+}
+
+/* =============== TRAINING =============== */
+
+.img-header-training {
+    background-image: url(../img/trening.jpg);
+    height: 590px;
+    background-size: cover;
+    justify-content: center;
+    background-position: 50%;
+    display: flex;
+    align-items: center;
+}
+.training-section1 {
+    margin-bottom: 40px;
+    box-shadow: 0 8px 38px 0 rgba(0,0,0,0.1);
+    width: 95%;
+    margin-top: 40px;
+    padding: 30px;
+}
+.training-section1 h1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    letter-spacing: 4px;
+}
+.training-section1 ul {
+    list-style: none outside none;
+    padding-left: 0px;
+}
+.section2 {
+  margin-top: 40px;
+}
+.section2 p {
+  margin-top: 40px;
+}
+
+/* media */
+
+@media screen and (min-width: 992px) and (max-width: 1300px) {
+    .training-section1 p {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .list-mobile {
+        text-align: center;
+    }
+}
+/* ============ ISHRANA ========== */
+.img-header-food {
+    background-image: url(../img/hrana1.jpg);
+    height: 590px;
+    background-size: cover;
+    justify-content: center;
+    background-position: 50%;
+    display: flex;
+    align-items: center;
+}
+.health-section1 h1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    letter-spacing: 4px;
+}
+.section2 h5 {
+
+  margin-bottom: -15px;
+}
+
+/*===========ZDRAVLJE===========*/
+
+.img-header-health {
+    background-image: url(../img/zdravlje.jpg);
+    height: 590px;
+    background-size: cover;
+    justify-content: center;
+    background-position: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.health-section1 {
+  margin-bottom: 40px;
+    box-shadow: 10px 8px 38px 10px rgba(0,0,0,0.1);
+    width: 95%;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+/*=========KONTAKT========*/
+
+.contact-section1 {
+  margin-bottom: 20px;
+    box-shadow: 10px 8px 38px 10px rgba(0,0,0,0.1);
+    width: 95%;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+.contact-text h3 {
+  font-style: bold;
+  font-style: italic;
+  font-style: underline;
+}
